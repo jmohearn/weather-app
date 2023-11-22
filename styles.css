@@ -15,7 +15,7 @@ body {
 .app-container {
   border: 2px solid #ccc;
   border-radius: 20px;
-  width: 30vw;
+  width: auto;
   height: auto;
   padding: 2rem 0;
 }
@@ -59,7 +59,10 @@ body {
 
 .app-info--input {
   width: 80%;
-  height: 3rem;
+  height: 3.5rem;
   border: 2px solid #ccc;
   border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  padding: 0 2rem;
 }
