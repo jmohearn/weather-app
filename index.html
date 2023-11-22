@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="app-title">
+        <h1>Weather App</h1>
+      </div>
+
+      <div class="app-image">
+        <img src="/img/cloudy.png" alt="weather image" />
+      </div>
+      <div class="app-info">
+        <div class="app-info--row location">
+          <h2 class="app-info--text location">Loganville, GA</h2>
+        </div>
+        <div class="app-info--row">
+          <input
+            type="text"
+            name="location"
+            id="location"
+            class="app-info--input"
+          />
+        </div>
+        <div class="app-info--row">
+          <h2 class="app-info--text sunrise">6:30 AM</h2>
+          <img class="app-info--img" src="img/sunrise.png" alt="sunrise icon" />
+        </div>
+        <div class="app-info--row">
+          <h2 class="app-info--text sunset">5:30 PM</h2>
+          <img class="app-info--img" src="img/sunset.png" alt="sunset icon" />
+        </div>
+        <div class="app-info--row">
+          <h2 class="app-info--text temp">58 / 43</h2>
+        </div>
+        <div class="app-info--row">
+          <h2 class="app-info--text wind">5 knts SW</h2>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
