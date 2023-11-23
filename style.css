@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.app-container {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  width: 300px;
+  height: 600px;
+  padding: 2rem 0;
+}
+
+.app-title {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.app-image {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.app-image img {
+  width: 60%;
+}
+
+.app-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.5rem;
+}
+
+.app-info--row {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app-info--text {
+  font-size: 1.5rem;
+}
+
+.app-info--img {
+  height: 3rem;
+}
+
+.app-info--input {
+  width: 60%;
+  height: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  padding: 0 2rem;
+}
+
+.search-btn {
+  width: 20%;
+}
