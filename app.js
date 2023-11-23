@@ -45,12 +45,22 @@ function updateUI(data) {
   const temp = data.main.temp;
   const highTemp = data.main.temp_max;
   const lowTemp = data.main.temp_min;
-  const locationName = data.main.name;
+  const locationName = data.name;
+  const sunrise = data.sys.sunrise;
+  const sunset = data.sys.sunset;
 
   function kelvinToF(f) {
     const tempF = Math.round((Number(f) - 273.15) * (9 / 5) + 32);
     return tempF;
   }
 
-  console.log(kelvinToF(temp), kelvinToF(highTemp), kelvinToF(lowTemp));
+  console.log(
+    `Current temperature in ${locationName} is: ${kelvinToF(
+      temp
+    )} degrees F, Today's high is: ${kelvinToF(
+      highTemp
+    )} degrees F, Today's Low is: ${kelvinToF(
+      lowTemp
+    )} degrees F. Sunrise: ${sunrise} Sunset: ${sunset}`
+  );
 }
