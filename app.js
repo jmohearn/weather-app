@@ -8,7 +8,7 @@ const sunsetText = document.querySelector(".sunset");
 const tempText = document.querySelector(".temp");
 const windText = document.querySelector(".wind");
 const searchBtn = document.querySelector(".search-btn");
-const apiKey = "a9083f84ed84924bb939a800022aae5c";
+const apiKey = secret.key;
 let data;
 
 function getLocation() {
