@@ -53,7 +53,6 @@ function updateUI(data) {
   const clouds = data.weather[0].description;
   const windSpeed = data.wind.speed;
   let windDirectionDeg = data.wind.deg;
-  let windDirectionQuad;
 
   function getQuad(degRaw) {
     let degree = Number(degRaw);
@@ -109,13 +108,4 @@ function updateUI(data) {
             windSpeed * 2.237
           )} mph from ${getQuad(windDirectionDeg)}</h2>
   `;
-
-  console.log(
-    `Current temperature in ${locationName} is:${kelvinToF(
-      temp
-    )} degrees F, Today's high is: ${kelvinToF(highTemp)}
-     degrees F, Today's Low is: ${kelvinToF(
-       lowTemp
-     )} degrees F. Sunrise: ${sunrise} Sunset: ${sunset}${clouds}`
-  );
 }
